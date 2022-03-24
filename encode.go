@@ -79,7 +79,7 @@ func encodeFloatN(bits int) encodeFunc {
 		if f == 0 && omitempty {
 			return buf, nil
 		}
-		return strconv.AppendFloat(buf, f, 'G', -1, bits), nil
+		return strconv.AppendFloat(buf, f, 'f', -1, bits), nil
 	}
 }
 
